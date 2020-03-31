@@ -1,0 +1,121 @@
+.hero {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 80px;
+  background-color: $hero-bg;
+
+  @media (min-width: $screen-md) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 100px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+    margin: 0 -20px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 -12px;
+    }
+  }
+
+  &__img-col {
+    @include col(xs, 12, $grid-columns, 0);
+    @include col(md, 6);
+    @include col-offset(xl, 1);
+    @include col(xl, 6);
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      order: 1;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 12px;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12, $grid-columns, 40px);
+    @include col(md, 6);
+    @include col(xl, 5);
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__img {
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      margin: auto;
+
+      @media (min-width: $screen-md) {
+        max-width: initial;
+      }
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-xl) {
+      //padding-top: 65px;
+    }
+  }
+
+  &__title {
+    line-height: 1.35;
+    margin-bottom: 22px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+  }
+
+  &__downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      display: block;
+      width: 178px;
+      height: 52px;
+    }
+  }
+}
+
+//@include col(sm, 6, $grid-columns, 10px);

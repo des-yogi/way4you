@@ -1,0 +1,144 @@
+.for-driver {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    span {
+      position: relative;
+      display: inline-block;
+      vertical-align: baseline;
+      padding: 0 40px;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6px;
+        background-color: $main-color;
+        transform: skewX(-45deg);
+      }
+    }
+  }
+
+  &__img-col {
+    display: none;
+    @include col(md, 6);
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    @media (min-width: $screen-md) {
+      padding-top: 225px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateX(170px);
+      width: 133px;
+      height: 381px;
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-image: svg-load('../blocks/for-driver/img/man.svg');
+    }
+
+    img {
+      display: block;
+      width: 200px;
+    }
+  }
+
+  &__stages-col {
+    @include col(xs, 12, $grid-columns, 20px);
+    @include col(md, 6);
+  }
+
+  &__stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__stage {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    //text-align: center;
+
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+
+    .step {
+      display: inline-block;
+      vertical-align: middle;
+
+      &::before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background-color: $white;
+      }
+
+      &--1 {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/for-driver-step-1.svg', fill=$main-color);
+        }
+      }
+
+      &--2 {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/for-driver-step-2.svg', fill=$main-color);
+        }
+      }
+
+      &--3 {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/for-driver-step-3.svg', fill=$main-color);
+        }
+      }
+    }
+  }
+
+  &__stage-img {
+    //padding: 25px;
+    width: 220px;
+    margin: auto;
+    box-shadow: $shadow;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
