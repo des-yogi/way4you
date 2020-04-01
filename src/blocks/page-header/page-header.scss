@@ -1,0 +1,51 @@
+.page-header {
+  background-color: $hero-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 40px 0;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: auto;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-left: 140px;
+    }
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &--noindex {
+    background-color: $white;
+  }
+}
