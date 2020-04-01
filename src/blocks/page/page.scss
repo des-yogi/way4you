@@ -259,6 +259,28 @@ a {
   );
 }
 
+.content {
+
+  &__col {
+    @include col(xs, 12, $grid-columns, 20px);
+    @include col(md, 11);
+    @include col(xl, 9);
+  }
+
+  &__container {
+    padding: 20px 0 60px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 30px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 40px;
+      padding-bottom: 90px;
+    }
+  }
+}
+
 /* &__element {
   @include col(); // малые ширины — 12 из 12, промежутки по умолчанию
   @include col(sm, 6, $grid-columns, 10px);  // SM (480 по умолчанию) — 6 из 12, промежутки 10px

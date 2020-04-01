@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
-
 <head>
   <meta charset="utf-8">
   <title>Way4You Home page</title>
-  @@include('_include/page_head.html')
-</head>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="description" content>
+  <meta name="keywords" content>
+  <meta name="robots" content="index,follow">
+  <!-- OpenGraph microdata
+  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+  <meta property="og:locale"        content="uk_UA" />
+  -->
+  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->
+  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
-
   <div class="page__inner">
-
     <div class="page__content">
-
-      @@include('blocks/page-header/page-header.html')
-
+      <header class="page-header" role="banner">
+        <div class="container">
+          <div class="page-header__inner">
+            <a href="index.html" class="logo">
+              <img src="img/way4you-logo.svg" alt="Way4you logo" width="128" height="18">
+            </a>
+            <ul class="list-nostyled  page-header__nav">
+              <li class="page-header__item">
+                <a href="#for-driver" class="scroll-link  h3  page-header__link" data-scroll-link>Водителю</a>
+              </li>
+              <li class="page-header__item">
+                <a href="#for-passenger" class="scroll-link  h3  page-header__link" data-scroll-link>Пассажиру</a>
+              </li>
+              <li class="page-header__item">
+                <a href="#downloads" class="scroll-link  h3  page-header__link" data-scroll-link>Загрузить</a>
+              </li>
+            </ul>
+            <div class="dropdown  lang-switcher">
+              <button id="langSwitcher" class="lang-switcher__btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,8">
+                <span class="lang-switcher__current">EN</span>
+              </button>
+              <ul class="list-nostyled  dropdown-menu  dropdown-menu-right  lang-switcher__list" aria-labelledby="langSwitcher">
+                <li class="lang-switcher__item  active">
+                  <a href="#" class="lang-switcher__link">RU</a>
+                </li>
+                <li class="lang-switcher__item">
+                  <a href="#" class="lang-switcher__link">UA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
       <section class="hero">
         <div class="container">
           <div class="row">
-
             <div class="hero__img-col">
               <div class="hero__img  revealator-slideup revealator-once revealator-load">
                 <picture>
@@ -27,16 +86,14 @@
                   <source data-srcset="img/car.png" media="(min-width: 992px)">
                   <!-- 671x468 -->
                   <source data-srcset="img/car.webp" type="image/webp">
-                  <img class="b-lazy" data-src="img/car.png" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Illustration" width="480" height="335">
+                  <img class="b-lazy" data-src="img/car.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Illustration" width="480" height="335">
                 </picture>
               </div>
             </div>
-
             <div class="hero__text-col">
               <div class="hero__text">
                 <h1 class="hero__title  revealator-slideup revealator-once revealator-load">Приложение для совместных поездок</h1>
                 <p class="hero__descr  revealator-slideup revealator-once revealator-delay2 revealator-load">Планируешь поездку или ездишь своей машиной?  Скачай приложение и экономь на такси или на топливе, с комфортом добираясь домой или на работу</p>
-
                 <div class="hero__downloads  revealator-slideup revealator-once revealator-delay3 revealator-load">
                   <a href="#" class="hero__link" title="Google Play" target="_blank" rel="nofollow noopener">
                     <img src="img/google-play.svg" alt="Google Play" width="178" height="52">
@@ -45,24 +102,16 @@
                     <img src="img/app-store.svg" alt="App Store" width="178" height="52">
                   </a>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
       <main role="main">
-
         <div class="container">
-
           <section class="advantages">
-
             <h2>Наши преимущества</h2>
-
             <div class="row">
-
               <div class="advantages__col  revealator-slideup revealator-once">
                 <div class="advantages__block">
                   <img src="img/economically.svg" alt="Иллюстрация" width="50" height="50">
@@ -70,7 +119,6 @@
                   <p>Для водителей – экономия на топливе, для пассажиров – экономия на такси. Ездить вместе – выгодней всем!</p>
                 </div>
               </div>
-
               <div class="advantages__col  revealator-slideup revealator-delay2 revealator-once">
                 <div class="advantages__block">
                   <img src="img/safely.svg" alt="Иллюстрация" width="50" height="50">
@@ -78,7 +126,6 @@
                   <p>Все профили: как водителей так и пассажиров проверяються, а рейтинги и отзывы помогут вам выбрать хорошего попутчика</p>
                 </div>
               </div>
-
               <div class="advantages__col  revealator-slideup revealator-delay4 revealator-once">
                 <div class="advantages__block">
                   <img src="img/quickly.svg" alt="Иллюстрация" width="50" height="50">
@@ -86,142 +133,146 @@
                   <p>Большая база водителей и пассажиров поможет вам найти попутчика для своего маршрута быстро и легко</p>
                 </div>
               </div>
-
             </div>
-
           </section>
-
           <section class="for-driver">
-
             <h2 class="for-driver__title"><span>Водителю</span></h2>
-
             <div class="row">
-
               <div class="for-driver__img-col">
                 <div class="for-driver__img  revealator-slideup revealator-once">
                   <picture>
                     <source srcset="img/for-driver-card-img.webp" type="image/webp">
-                    <img src="img/for-driver-card-img.png" alt="Иллюстрация" width="" height="">
+                    <img src="img/for-driver-card-img.png" alt="Иллюстрация" width height>
                   </picture>
                 </div>
               </div>
-
               <div class="for-driver__stages-col">
-
                 <div class="for-driver__stages">
-
                   <div class="for-driver__stage  for-driver__stage--1  revealator-slideup revealator-once">
                     <h4 class="for-driver__subtitle  for-driver__subtitle--1"><span class="step  step--1">01. Создайте маршрут</span></h4>
                     <div class="for-driver__stage-img">
                       <img src="img/for-driver-1.svg" alt="Этап 1" width="220">
                     </div>
                   </div>
-
                   <div class="for-driver__stage  for-driver__stage--2  revealator-slideup revealator-delay2 revealator-once">
                     <h4 class="for-driver__subtitle  for-driver__subtitle--2"><span class="step  step--2">02. Выберите дату и время</span></h4>
                     <div class="for-driver__stage-img">
                       <img src="img/for-driver-2.svg" alt="Этап 2" width="220">
                     </div>
                   </div>
-
                   <div class="for-driver__stage  for-driver__stage--4  revealator-slideup revealator-delay4 revealator-once">
                     <h4 class="for-driver__subtitle  for-driver__subtitle--3"><span class="step  step--3"></span>03. Выбирайте пассажиров</h4>
                     <div class="for-driver__stage-img">
                       <img src="img/for-driver-3.svg" alt="Этап 3" width="220">
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </section>
-
           <section class="for-passenger">
-
             <h2 class="for-passenger__title"><span>Пассажиру</span></h2>
-
             <div class="row">
-
               <div class="for-passenger__img-col">
                 <div class="for-passenger__img  revealator-slideup revealator-once">
                   <picture>
                     <source srcset="img/for-passenger-card-img.webp" type="image/webp">
-                    <img src="img/for-passenger-card-img.png" alt="Иллюстрация" width="" height="">
+                    <img src="img/for-passenger-card-img.png" alt="Иллюстрация" width height>
                   </picture>
                 </div>
               </div>
-
               <div class="for-passenger__stages-col">
-
                 <div class="for-passenger__stages">
-
                   <div class="for-passenger__stage  for-passenger__stage--1  revealator-slideup revealator-once">
                     <h4 class="for-passenger__subtitle  for-passenger__subtitle--1"><span class="step  step--1">01. Введите маршрут</span></h4>
                     <div class="for-passenger__stage-img">
                       <img src="img/for-passenger-1.svg" alt="Этап 1" width="220">
                     </div>
                   </div>
-
                   <div class="for-passenger__stage  for-passenger__stage--2  revealator-slideup revealator-delay2 revealator-once">
                     <h4 class="for-passenger__subtitle  for-passenger__subtitle--2"><span class="step  step--2">02. Выберите дату и время</span></h4>
                     <div class="for-passenger__stage-img">
                       <img src="img/for-passenger-2.svg" alt="Этап 2" width="220">
                     </div>
                   </div>
-
                   <div class="for-passenger__stage  for-passenger__stage--3  revealator-slideup revealator-delay4 revealator-once">
                     <h4 class="for-passenger__subtitle  for-passenger__subtitle--3"><span class="step  step--3"></span>03. Забронируйте поездку</h4>
                     <div class="for-passenger__stage-img">
                       <img src="img/for-passenger-3.svg" alt="Этап 3" width="220">
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </section>
-
         </div>
-
         <section id="downloads" class="downloads">
-
           <div class="container">
-
             <h2 class="h1  revealator-slideup revealator-once">Скачай – это бесплатно!</h2>
-
             <div class="downloads__link-wrapper">
-
               <a href="#" class="downloads__link  revealator-slideup revealator-delay2 revealator-once" title="Google Play" target="_blank" rel="nofollow noopener">
-                <img class="b-lazy" data-src="img/google-play.svg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Google Play" width="178" height="52">
+                <img class="b-lazy" data-src="img/google-play.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Google Play" width="178" height="52">
               </a>
-
               <a href="#" class="downloads__link  revealator-slideup revealator-delay4 revealator-once" title="App Store" target="_blank" rel="nofollow noopener">
-                <img class="b-lazy" data-src="img/app-store.svg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="App Store" width="178" height="52">
+                <img class="b-lazy" data-src="img/app-store.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="App Store" width="178" height="52">
               </a>
-
             </div>
-
           </div>
-
         </section>
-
       </main>
-
     </div>
-
     <div class="page__footer-wrapper">
-      @@include('blocks/page-footer/page-footer.html')
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <div class="page-footer__main">
+            <div class="row  page-footer__main-row">
+              <div class="page-footer__logo-col">
+                <a href="index.html" class="logo  logo--footer">
+                  <img class="b-lazy" data-src="img/way4you-logo-footer.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Way4you logo" width="128" height="18">
+                </a>
+              </div>
+              <div class="page-footer__contacts-col">
+                <ul class="list-nostyled  page-footer__contacts">
+                  <li class="page-footer__item">
+                    <a href="tel:+380980998734" class="page-footer__link  page-footer__link--tel">+ 380 (98) 09 98 734</a>
+                  </li>
+                  <li class="page-footer__item">
+                    <a href="mailto:way4you@gmail.com" class="page-footer__link  page-footer__link--mail">way4you@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__socials-col">
+                <ul class="list-nostyled  socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link  socials__link--fb" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Facebook</span></a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link  socials__link--tw" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Twitter</span></a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link  socials__link--insta" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Instagram</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__copyrights">
+            <div class="copyrights">
+              <div class="copyrights__owner">©&thinsp;2020 Way4You. Все права защищены.</div>
+              <ul class="list-nostyled  copyrights__docs-list">
+                <li class="copyrights__docs-item">
+                  <a href="#" class="copyrights__docs-link">Политика конфиденциальности.</a>
+                </li>
+                <li class="copyrights__docs-item">
+                  <a href="#" class="copyrights__docs-link">Правила использования</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
   </div>
-
-  @@include('_include/page_bottom.html')
-
+  <script src="js/script.min.js"></script>
 </body>
 </html>

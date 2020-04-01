@@ -1,9 +1,59 @@
-// В этом файле должны быть стили для БЭМ-блока downloads, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .downloads {
+  padding: 80px 0;
+  text-align: center;
+  background-color: $downloads-bg;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-image: url(../img/background.svg);
+
+  @media (min-width: $screen-md) {
+    padding: 100px 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 205px 0;
+    background-size: contain;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  .h1 {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+
+      @media (min-width: $screen-md) {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 178px;
+      height: 52px;
+    }
+  }
 }
