@@ -43,6 +43,11 @@
       margin-bottom: 0;
     }
 
+    &:hover,
+    &:focus {
+      box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.15);
+    }
+
     &:first-child {
 
       @media (min-width: $screen-md) {

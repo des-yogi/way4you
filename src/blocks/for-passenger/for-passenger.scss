@@ -47,6 +47,7 @@
   &__img-col {
     display: none;
     @include col(md, 6);
+    @include col-offset(xl, 1);
     @include col(xl, 5);
 
     @media (min-width: $screen-md) {
@@ -85,7 +86,8 @@
       @media (min-width: $screen-xl) {
         width: 226px;
         height: 602px;
-        transform: translateX(-305px);
+        //transform: translateX(-305px);
+        transform: translateX(-255px);
       }
     }
 
@@ -95,7 +97,8 @@
       margin-left: auto;
 
       @media (min-width: $screen-xl) {
-        width: 350px;
+        //width: 350px;
+        width: 300px;
       }
     }
   }
@@ -103,7 +106,7 @@
   &__stages-col {
     @include col(xs, 12, $grid-columns, 20px);
     @include col(md, 6);
-    @include col-offset(xl, 1);
+    //@include col-offset(xl, 1);
     @include col(xl, 6);
   }
 

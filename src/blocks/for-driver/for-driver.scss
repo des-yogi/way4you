@@ -79,7 +79,8 @@
       @media (min-width: $screen-xl) {
         width: 212px;
         height: 606px;
-        transform: translateX(330px);
+        //transform: translateX(330px);
+        transform: translateX(255px);
       }
     }
 
@@ -88,7 +89,8 @@
       width: 200px;
 
       @media (min-width: $screen-xl) {
-        width: 350px;
+        //width: 350px;
+        width: 300px;
       }
     }
   }
@@ -96,8 +98,9 @@
   &__stages-col {
     @include col(xs, 12, $grid-columns, 20px);
     @include col(md, 6);
-    @include col-offset(xl, 1);
-    @include col(xl, 6);
+    //@include col-offset(xl, 1);
+    //@include col(xl, 6);
+    @include col(xl, 7);
   }
 
   &__stages {
