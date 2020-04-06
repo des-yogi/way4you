@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 60px;
   margin-bottom: 80px;
@@ -121,6 +122,36 @@
       height: 52px;
     }
   }
-}
 
-//@include col(sm, 6, $grid-columns, 10px);
+  &__page-scroll {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $screen-xl) {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateY(0);
+      }
+      30% {
+        transform: translateY(19px);
+      }
+    }
+
+    svg {
+      display: block;
+      width: 40px;
+      height: 62px;
+
+      #wheel {
+        animation: scroll ease 1.5s infinite;
+      }
+    }
+  }
+}
