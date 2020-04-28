@@ -23,7 +23,8 @@
     "socials": [],
     "copyrights": [],
     "revealator": [],
-    "is-mobile": []
+    "is-mobile": [],
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
