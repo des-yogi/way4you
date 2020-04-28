@@ -1,0 +1,58 @@
+.page-404 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 75px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 60px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12, $grid-columns, 20px);
+    @include col-offset(md, 2);
+    @include col(md, 8);
+    @include col-offset(xl, 3);
+    @include col(xl, 6);
+  }
+
+  &__content {
+    text-align: center;
+
+    img {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 65px;
+    font-weight: 700;
+    font-size: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    color: $white;
+    background-color: $second-color;
+    border-radius: 30px;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      outline: none;
+      background-color: darken($second-color, 5%);
+    }
+  }
+}
